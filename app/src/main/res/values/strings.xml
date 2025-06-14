@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ResQ</string>
+    <string name="police">Police</string>
+    <string name="calling">Calling...</string>
+    <string name="emergency_services">Emergency Services</string>
+    <string name="medical">Medical</string>
+</resources>

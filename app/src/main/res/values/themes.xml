@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- App theme with ActionBar -->
+    <style name="Theme.ResQ" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#1C2E4A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Splash theme without ActionBar -->
+    <style name="Theme.ResQ.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item> <!-- Step 1: Test background -->
+    </style>
+</resources>

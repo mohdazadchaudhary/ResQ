@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <!-- 🧭 App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Emergency Tips..."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 🔁 Auto Sliding Banner -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:fitsSystemWindows="true"
+        />
+
+    <!-- 📦 CardView containing all Buttons (Adjusted to be at the bottom) -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:elevation="8dp"
+        android:backgroundTint="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- 🔘 Row 1 Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnPolice"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle_button"
+                    android:contentDescription="Police"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/police" />
+
+                <ImageButton
+                    android:id="@+id/btnFire"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle_button"
+                    android:contentDescription="Fire"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fire" />
+
+                <ImageButton
+                    android:id="@+id/btnMed"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle_button"
+                    android:contentDescription="Medical"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/med" />
+            </LinearLayout>
+
+            <!-- 🔘 Row 2 Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnWomen"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle_button"
+                    android:contentDescription="Women"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/women" />
+
+                <ImageButton
+                    android:id="@+id/btnAll"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle_button"
+                    android:contentDescription="All Services"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/all" />
+
+                <ImageButton
+                    android:id="@+id/btnDisaster"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/circle_button"
+                    android:contentDescription="Disaster"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dister" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
