@@ -90,8 +90,3 @@ Contributions are welcome.
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**, making it free for personal and commercial use.
-
----
